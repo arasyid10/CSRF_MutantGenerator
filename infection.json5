@@ -1,0 +1,44 @@
+{
+    "source": {
+        "directories": [
+            "src"
+        ],
+        "excludes": [
+            "vendor",
+            "tests"
+        ]
+    },
+    "testFramework": "phpunit",
+    "bootstrap": "./vendor/autoload.php",
+    "phpUnit": {
+        "configDir": "."
+    },
+    "mutators": {
+    
+    "App\\Mutator\\RandomBytesToOpenSslRandomPseudoBytes": true,
+    "App\\Mutator\\RandomBytesToRandomInt":true,
+    "App\\Mutator\\RandomBytesToRandMutator":true,
+    "App\\Mutator\\Html\\InputToLabelHtmlTagMutator":true,
+    "App\\Mutator\\Html\\InputToSelectHtmlTagMutator":true,
+    "App\\Mutator\\Html\\InputToButtonHtmlTagMutator":true,
+    "App\\Mutator\\Html\\InputToTextareaHtmlTagMutator":true,
+    "App\\Mutator\\Html\\InputToFieldsetHtmlTagMutator":true,
+    "App\\Mutator\\Html\\InputHiddenTypeAlternativesMutator":true,
+    "App\\Mutator\\Html\\InputNameAttributeAlternativesMutator":true,
+    "App\\Mutator\\Html\\HtmlValueTokenMutator":true,
+    "App\\Mutator\\Html\\ExHtmlHiddenInputWipeStringMutator":true,
+    "App\\Mutator\\Html\\ExHtmlHiddenInputStripTagMutator":true,
+    "App\\Mutator\\Security\\HashHmacAlgoAlternativesMutator":true,
+    "App\\Mutator\\Security\\HashEqualsToInsecureEqualityMutator":true,
+    "App\\Mutator\\Security\\StrcmpToEqualityAlternativesMutator":true
+    
+    },
+    "timeout": 10,
+    "logs": {
+        "text": "build/logs/infection.log",
+        "html": "build/logs/infection.html",
+        "summary": "build/logs/summary.log",
+        "json": "infection-log.json",
+        "summaryJson": "summary.json"
+    }
+}
