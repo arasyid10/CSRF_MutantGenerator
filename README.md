@@ -1,9 +1,8 @@
-# 🛡️ Path Traversal & Authorization Bypass Vulnerability Simulation
+# 🛡️ Cross Site Request Forgery Vulnerability Simulation
 
 This dummy PHP project is designed to **simulate and test real-world file access vulnerabilities**, specifically:
 
-- 🔓 **Directory & Path Traversal (CWE-22 to CWE-36)**
-- 🧑‍💻 **Authorization Bypass via Predictable IDs (CWE-639)**
+- 🔓 **CSRF (CWE-352)**
 - ✅ PHPUnit tests all pass (expected behavior)
 - 🧪 Infection detects **surviving mutants** due to intentionally weak validation logic
 
@@ -57,27 +56,6 @@ traversal-vulnerabilities/
 
 ## 🧪 Test Cases Breakdown (by CWE)
 
-Each test file maps directly to a **CWE (Common Weakness Enumeration)** ID and simulates attack vectors found in real systems.
-
-| CWE ID | Name                                 | Description |
-|--------|--------------------------------------|-------------|
-| CWE-23 | Relative Path Traversal              | `../../` or `..\\..\\` to escape base dir |
-| CWE-24 | Traversal to Specific Directory      | Accessing `../admin`, `../config` |
-| CWE-25 | Absolute Path Access                 | Access `/etc/passwd` or `C:\Windows\...` |
-| CWE-26 | Obfuscated Traversal                 | Triple-dot: `.../...//` |
-| CWE-27 | Folder Up One Level                  | Legit path with `/..` |
-| CWE-28 | Double Encoded Traversal             | `%252e%252e%252f` decoded to `../` |
-| CWE-29 | Unicode Traversal                    | Unicode `\u002e` trick |
-| CWE-30 | Null Byte Injection                  | `../../etc/passwd%00.png` bypass |
-| CWE-31 | Mid-Path Traversal                   | E.g. `images/../../admin/...` |
-| CWE-32 | Path Normalization (`dir/..`)        | E.g. `assets/../` |
-| CWE-33 | Double Upward Traversal              | `folder/sub/../../` |
-| CWE-34 | Multi-Level Traversal                | 3+ level traversal |
-| CWE-35 | Extra Dots in Filename               | E.g. `secret.txt...` |
-| CWE-36 | Mixed Slashes Traversal              | Combining `/`, `\`, `\\` |
-| CWE-639| Authorization Bypass via ID          | Predictable ID = access any user |
-
----
 
 ## ✅ How to Run
 
