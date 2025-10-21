@@ -1,0 +1,918 @@
+Note: Pass `--debug` to log test-framework output.
+
+Escaped mutants:
+================
+
+1) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputToLabelHtmlTagMutator [ID] 6c17d19387b4ff5b8912ead5915edb8f
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<label type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.6c17d19387b4ff5b8912ead5915edb8f.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+2) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputToSelectHtmlTagMutator [ID] bc417fb10902085357800a9da110e096
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<select type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.bc417fb10902085357800a9da110e096.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+3) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputToButtonHtmlTagMutator [ID] 33f898a7fa501bc0ba99b01e4412a990
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<button type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.33f898a7fa501bc0ba99b01e4412a990.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.017, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+4) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputToTextareaHtmlTagMutator [ID] a928372d4d81636654126081a01114bf
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<textarea type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.a928372d4d81636654126081a01114bf.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.014, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+5) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputToFieldsetHtmlTagMutator [ID] dcbece2af0067e6bea65d4264d189bd4
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<fieldset type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.dcbece2af0067e6bea65d4264d189bd4.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.016, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+6) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 05abd473ee8eb34c8a4a11a8419096a5
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"text\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.05abd473ee8eb34c8a4a11a8419096a5.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+7) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 5351f6b70ab81c5444f374fea0f1cac3
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"password\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.5351f6b70ab81c5444f374fea0f1cac3.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+8) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 224014a6b10fdd1831c9dbca81fd2297
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"checkbox\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.224014a6b10fdd1831c9dbca81fd2297.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 186 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.019, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+9) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 3cc4b2479bbec1916ec507d27dba8342
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"radio\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.3cc4b2479bbec1916ec507d27dba8342.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.024, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+10) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 3b9fba389485c2843a798bd6d11b6e7b
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"file\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.3b9fba389485c2843a798bd6d11b6e7b.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+11) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 08cbf56f33e31faf46b5890be3e927fc
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"submit\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.08cbf56f33e31faf46b5890be3e927fc.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+12) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 21e2fa76c90603d7924a0ca93186724b
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"reset\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.21e2fa76c90603d7924a0ca93186724b.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.014, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+13) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 02126cd7c330d0b76eb1e52bb69ada77
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"button\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.02126cd7c330d0b76eb1e52bb69ada77.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.016, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+14) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 5c14abc062155ab0aefe050db9b4e503
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"number\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.5c14abc062155ab0aefe050db9b4e503.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+15) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 048326a6a60c7b091d011ac8f5e1d89c
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"date\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.048326a6a60c7b091d011ac8f5e1d89c.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.016, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+16) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 1988d451e5f292317bd300310e71c806
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"email\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.1988d451e5f292317bd300310e71c806.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+17) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:43    [M] App\Mutator\Html\InputHiddenTypeAlternativesMutator [ID] 3b5430f07d9be5174d61803bba69b78f
+
+@@ @@
+     public function insertHiddenToken()
+     {
+         //$hidden = "<!--\n--><input type=\"hidden\"" . " name=\"token-csrf\"" . " value=\"" . $_COOKIE["PHPSESSID"] . "\"" . " />";
+-        $hidden = "<input type=\"hidden\"" . " name=\"token-csrf\"" . " value=12345" . " />";
++        $hidden = "<input type=\"url\"" . " name=\"token-csrf\"" . " value=12345" . " />";
+         return $hidden;
+     }
+     public function validateCSRFToken($submittedToken)
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.3b5430f07d9be5174d61803bba69b78f.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.016, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+18) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:60    [M] App\Mutator\Security\StrcmpToEqualityAlternativesMutator [ID] ea9ba97f1c46e05a322c75b25cc433d7
+
+@@ @@
+             $expected = $this->session[$this->sessionTokenLabel];
+         }
+         //return hash_equals($expected, $submittedToken);
+-        return strcmp($expected, $submittedToken);
++        return strcasecmp($expected, $submittedToken);
+     }
+     public function getCSRFToken()
+     {
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.ea9ba97f1c46e05a322c75b25cc433d7.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.014, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+19) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:60    [M] App\Mutator\Security\StrcmpToEqualityAlternativesMutator [ID] 8d67497dc1e9faf3160987341415d579
+
+@@ @@
+             $expected = $this->session[$this->sessionTokenLabel];
+         }
+         //return hash_equals($expected, $submittedToken);
+-        return strcmp($expected, $submittedToken);
++        return strcoll($expected, $submittedToken);
+     }
+     public function getCSRFToken()
+     {
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.8d67497dc1e9faf3160987341415d579.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+20) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:60    [M] App\Mutator\Security\StrcmpToEqualityAlternativesMutator [ID] 34dab3d33a193e7986906dec212337a9
+
+@@ @@
+             $expected = $this->session[$this->sessionTokenLabel];
+         }
+         //return hash_equals($expected, $submittedToken);
+-        return strcmp($expected, $submittedToken);
++        return levenshtein($expected, $submittedToken);
+     }
+     public function getCSRFToken()
+     {
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.34dab3d33a193e7986906dec212337a9.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 183 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+21) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:67    [M] RandomBytesToOpenSslRandomPseudoBytes [ID] d002a3bb0916dd3a2b483bc3f5c296ab
+
+@@ @@
+     {
+         $this->unsetToken();
+         if (empty($this->session[$this->sessionTokenLabel])) {
+-            $this->session[$this->sessionTokenLabel] = bin2hex(random_bytes($this->tokenLen));
++            $this->session[$this->sessionTokenLabel] = bin2hex(openssl_random_pseudo_bytes($this->tokenLen));
+         }
+         if ($this->hmac_ip !== false) {
+             $token = $this->hMacWithIp($this->session[$this->sessionTokenLabel]);
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.d002a3bb0916dd3a2b483bc3f5c296ab.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 191 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.016, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+22) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:67    [M] RandomBytesToRandomInt [ID] 18b5dd4761337cfb5a71983d44f92126
+
+@@ @@
+     {
+         $this->unsetToken();
+         if (empty($this->session[$this->sessionTokenLabel])) {
+-            $this->session[$this->sessionTokenLabel] = bin2hex(random_bytes($this->tokenLen));
++            $this->session[$this->sessionTokenLabel] = bin2hex(random_int(0, $this->tokenLen));
+         }
+         if ($this->hmac_ip !== false) {
+             $token = $this->hMacWithIp($this->session[$this->sessionTokenLabel]);
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.18b5dd4761337cfb5a71983d44f92126.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.023, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+23) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:67    [M] App\Mutator\RandomBytesToRandMutator [ID] 5721114d7a75374f25ee325cb135d7dc
+
+@@ @@
+     {
+         $this->unsetToken();
+         if (empty($this->session[$this->sessionTokenLabel])) {
+-            $this->session[$this->sessionTokenLabel] = bin2hex(random_bytes($this->tokenLen));
++            $this->session[$this->sessionTokenLabel] = bin2hex(rand(0, $this->tokenLen));
+         }
+         if ($this->hmac_ip !== false) {
+             $token = $this->hMacWithIp($this->session[$this->sessionTokenLabel]);
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.5721114d7a75374f25ee325cb135d7dc.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.016, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+24) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:87    [M] App\Mutator\Security\HashHmacAlgoAlternativesMutator [ID] 34b8fd6a670c77d39474b09f9954a903
+
+@@ @@
+         //based on
+         //$message = $_COOKIE["PHPSESSID"]. "!" .$token;
+         $message = "12345!" . $token;
+-        $hashHmac = \hash_hmac($this->hashAlgo, $message, $this->hmacData);
++        $hashHmac = \hash_hmac('Md5', $message, $this->hmacData);
+         return $hashHmac;
+     }
+ }
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.34b8fd6a670c77d39474b09f9954a903.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+25) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:87    [M] App\Mutator\Security\HashHmacAlgoAlternativesMutator [ID] 6d1362defcb868148e86e9bf7d12f7e3
+
+@@ @@
+         //based on
+         //$message = $_COOKIE["PHPSESSID"]. "!" .$token;
+         $message = "12345!" . $token;
+-        $hashHmac = \hash_hmac($this->hashAlgo, $message, $this->hmacData);
++        $hashHmac = \hash_hmac('Whirlpool', $message, $this->hmacData);
+         return $hashHmac;
+     }
+ }
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.6d1362defcb868148e86e9bf7d12f7e3.infection.xml
+  
+  ...                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 187 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.015, Memory: 10.00 MB
+  
+  OK (3 tests, 3 assertions)
+
+
+Timed Out mutants:
+==================
+
+Skipped mutants:
+================
+
+Killed by Test Framework mutants:
+=================================
+
+1) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:60    [M] App\Mutator\Security\StrcmpToEqualityAlternativesMutator [ID] 190f1cb18c0a75b8472d68e4abd6d301
+
+@@ @@
+             $expected = $this->session[$this->sessionTokenLabel];
+         }
+         //return hash_equals($expected, $submittedToken);
+-        return strcmp($expected, $submittedToken);
++        return $expected === $submittedToken;
+     }
+     public function getCSRFToken()
+     {
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.190f1cb18c0a75b8472d68e4abd6d301.infection.xml
+  
+  ..F                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 235 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.027, Memory: 10.00 MB
+  
+  There was 1 failure:
+  
+  1) Tests\CWE352CSRFTest::testValidateCSRFToken
+  Failed asserting that true is identical to 0.
+  
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\tests\CWE352CSRFTest.php:40
+  
+  FAILURES!
+  Tests: 3, Assertions: 3, Failures: 1.
+
+
+2) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:60    [M] App\Mutator\Security\StrcmpToEqualityAlternativesMutator [ID] 68d726e8943597ac6f771954f7c8a0e6
+
+@@ @@
+             $expected = $this->session[$this->sessionTokenLabel];
+         }
+         //return hash_equals($expected, $submittedToken);
+-        return strcmp($expected, $submittedToken);
++        return $expected == $submittedToken;
+     }
+     public function getCSRFToken()
+     {
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.68d726e8943597ac6f771954f7c8a0e6.infection.xml
+  
+  ..F                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 235 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.029, Memory: 10.00 MB
+  
+  There was 1 failure:
+  
+  1) Tests\CWE352CSRFTest::testValidateCSRFToken
+  Failed asserting that true is identical to 0.
+  
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\tests\CWE352CSRFTest.php:40
+  
+  FAILURES!
+  Tests: 3, Assertions: 3, Failures: 1.
+
+
+3) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:60    [M] App\Mutator\Security\StrcmpToEqualityAlternativesMutator [ID] 0f504d0a596a3265ad9273d1123c251b
+
+@@ @@
+             $expected = $this->session[$this->sessionTokenLabel];
+         }
+         //return hash_equals($expected, $submittedToken);
+-        return strcmp($expected, $submittedToken);
++        return hash_equals($expected, $submittedToken);
+     }
+     public function getCSRFToken()
+     {
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.0f504d0a596a3265ad9273d1123c251b.infection.xml
+  
+  ..F                                                                 3 / 3 (100%)
+  Notice: fwrite(): Write of 235 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.026, Memory: 10.00 MB
+  
+  There was 1 failure:
+  
+  1) Tests\CWE352CSRFTest::testValidateCSRFToken
+  Failed asserting that true is identical to 0.
+  
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\tests\CWE352CSRFTest.php:40
+  
+  FAILURES!
+  Tests: 3, Assertions: 3, Failures: 1.
+
+
+4) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:87    [M] App\Mutator\Security\HashHmacAlgoAlternativesMutator [ID] d11be3f2ca6034f7fc6f4bd21204b80d
+
+@@ @@
+         //based on
+         //$message = $_COOKIE["PHPSESSID"]. "!" .$token;
+         $message = "12345!" . $token;
+-        $hashHmac = \hash_hmac($this->hashAlgo, $message, $this->hmacData);
++        $hashHmac = \hash_hmac('SHA-1', $message, $this->hmacData);
+         return $hashHmac;
+     }
+ }
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.d11be3f2ca6034f7fc6f4bd21204b80d.infection.xml
+  
+  .E
+  Notice: fwrite(): Write of 188 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.026, Memory: 10.00 MB
+  
+  There was 1 error:
+  
+  1) Tests\CWE352CSRFTest::testCsrfTokenGeneration
+  ValueError: hash_hmac(): Argument #1 ($algo) must be a valid cryptographic hashing algorithm
+  
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:80
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:62
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\tests\CWE352CSRFTest.php:34
+  
+  ERRORS!
+  Tests: 2, Assertions: 1, Errors: 1.
+
+
+5) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:87    [M] App\Mutator\Security\HashHmacAlgoAlternativesMutator [ID] 0d13c748bf198362255a61cd222fca2c
+
+@@ @@
+         //based on
+         //$message = $_COOKIE["PHPSESSID"]. "!" .$token;
+         $message = "12345!" . $token;
+-        $hashHmac = \hash_hmac($this->hashAlgo, $message, $this->hmacData);
++        $hashHmac = \hash_hmac('SHA-256', $message, $this->hmacData);
+         return $hashHmac;
+     }
+ }
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.0d13c748bf198362255a61cd222fca2c.infection.xml
+  
+  .E
+  Notice: fwrite(): Write of 188 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.026, Memory: 10.00 MB
+  
+  There was 1 error:
+  
+  1) Tests\CWE352CSRFTest::testCsrfTokenGeneration
+  ValueError: hash_hmac(): Argument #1 ($algo) must be a valid cryptographic hashing algorithm
+  
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:80
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:62
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\tests\CWE352CSRFTest.php:34
+  
+  ERRORS!
+  Tests: 2, Assertions: 1, Errors: 1.
+
+
+6) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:87    [M] App\Mutator\Security\HashHmacAlgoAlternativesMutator [ID] c499a97b086309533623c304c63c485f
+
+@@ @@
+         //based on
+         //$message = $_COOKIE["PHPSESSID"]. "!" .$token;
+         $message = "12345!" . $token;
+-        $hashHmac = \hash_hmac($this->hashAlgo, $message, $this->hmacData);
++        $hashHmac = \hash_hmac('SHA-512', $message, $this->hmacData);
+         return $hashHmac;
+     }
+ }
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.c499a97b086309533623c304c63c485f.infection.xml
+  
+  .E
+  Notice: fwrite(): Write of 188 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.027, Memory: 10.00 MB
+  
+  There was 1 error:
+  
+  1) Tests\CWE352CSRFTest::testCsrfTokenGeneration
+  ValueError: hash_hmac(): Argument #1 ($algo) must be a valid cryptographic hashing algorithm
+  
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:80
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:62
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\tests\CWE352CSRFTest.php:34
+  
+  ERRORS!
+  Tests: 2, Assertions: 1, Errors: 1.
+
+
+7) D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:87    [M] App\Mutator\Security\HashHmacAlgoAlternativesMutator [ID] b65a4c892e6967a690dcb1acaf504493
+
+@@ @@
+         //based on
+         //$message = $_COOKIE["PHPSESSID"]. "!" .$token;
+         $message = "12345!" . $token;
+-        $hashHmac = \hash_hmac($this->hashAlgo, $message, $this->hmacData);
++        $hashHmac = \hash_hmac('RIPEMD-160', $message, $this->hmacData);
+         return $hashHmac;
+     }
+ }
+
+  PHPUnit 10.5.47 by Sebastian Bergmann and contributors.
+  
+  Runtime:       PHP 8.2.0
+  Configuration: C:\Users\Abdurrasyid\AppData\Local\Temp\infection\phpunitConfiguration.b65a4c892e6967a690dcb1acaf504493.infection.xml
+  
+  .E
+  Notice: fwrite(): Write of 188 bytes failed with errno=13 Permission denied in D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\vendor\infection\include-interceptor\src\IncludeInterceptor.php on line 359
+  
+  
+  Time: 00:00.025, Memory: 10.00 MB
+  
+  There was 1 error:
+  
+  1) Tests\CWE352CSRFTest::testCsrfTokenGeneration
+  ValueError: hash_hmac(): Argument #1 ($algo) must be a valid cryptographic hashing algorithm
+  
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:80
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\src\UserProfileRead.php:62
+  D:\Kegiatanku\S3\Semester 8\PPT\Kelompok 3 IPL\traversal-vulnerabilities-main_CSRF\traversal-vulnerabilities-main\tests\CWE352CSRFTest.php:34
+  
+  ERRORS!
+  Tests: 2, Assertions: 1, Errors: 1.
+
+
+Killed by Static Analysis mutants:
+==================================
+
+Errors mutants:
+===============
+
+Syntax Errors mutants:
+======================
