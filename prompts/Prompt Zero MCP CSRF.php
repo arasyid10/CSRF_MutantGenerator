@@ -1,5 +1,5 @@
-<?
-  You are a software testing expert using PHP-based mutation testing.
+<?php
+/*  You are a software testing expert using PHP-based mutation testing.
 1. The source code is written in PHP.
 2. Test execution is performed using PHPUnit.
 3. Mutation testing is conducted with Infection.
@@ -495,3 +495,4 @@ Test case generation is prioritized based on two criteria:
 -	Provide the test case in PHPUnit format with clear comments and proper function naming.
 -	Logical Justification for Survived Mutant Based on Uncovered Path
 -	Remove all comments, leave just the test case code
+*/

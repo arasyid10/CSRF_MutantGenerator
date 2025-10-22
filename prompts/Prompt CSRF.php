@@ -1,6 +1,6 @@
 CSRF
 <?
-You are a software testing expert using PHP-based mutation testing.
+/*You are a software testing expert using PHP-based mutation testing.
 1. The source code is written in PHP.
 2. Test execution is performed using PHPUnit.
 3. Mutation testing is conducted with Infection.
@@ -68,3 +68,4 @@ The test should be syntactically valid, use proper assertion methods to solve th
 - If there are any issues in the source code that require improvement to enhance software security, 
 please provide comprehensive source code recommendations.
 - Remove all comments, leave just the test case code 
+*/
